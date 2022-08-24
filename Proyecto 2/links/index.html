@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .cabecera li{
+            display:inline-block;
+        }
+        /* .cabecera a{
+            color: black;
+            text-decoration: none;
+            border: solid 1px;
+            background: rgb(125, 212, 125);
+            padding: 5px 10px;
+        } */
+        body{
+            background: rgb(125, 212, 196);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul{
+            padding:0;
+            text-align:right;
+        }
+        h1{
+            text-align:center;
+        }
+        h2{
+            text-align:center;
+        }
+        /*Inicio de flexbox */
+        .conteiner{
+            max-width: 800px;
+            margin-inline: auto;
+            padding-inline: 100px;
+            background:rgb(125, 212, 196);
+            margin-bottom:100px;
+            margin-top:100px;
+        }
+
+        .caja-flex{
+            width: 100%;
+            /* display: flex;
+            justify-content: space-between; 
+            align-items: center; */
+
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .caja{
+            background: rgb(175,244,198);
+            width: 100%;
+            min-height: 180px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 6px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top:40px;
+            padding-bottom: 40px;
+        }
+        /*Botones */
+        .btn{
+            margin-inline: 40px;
+            background: black;
+            color:white;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+
+            transition: background-color ease-out 0.2s;
+        }
+        /*Fin de flexbox */
+        div{
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+        }
+        /* Portada */
+        .portada{
+            color:white;
+            box-sizing: border-box;
+            padding-top:100px;
+            height: 500px;
+
+            background: url('../imagen/fulbito.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        .floating{
+            position: fixed;
+            bottom: 60px;
+            right: 40px;
+        }
+        /* hover-> por encima de*/
+        .btn:hover{
+            background: #444;
+        }
+
+        .full-width{
+            width: 100%;
+            padding: 25px;
+        }
+        .flex-box{
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .bg-black{
+            background-color: black;
+            color:white;
+        }
+        .img{
+            height:  10px;
+            width: 10px;
+            
+        }
+        @media (max-width: 767px){
+            .flex-box{
+                width:100%;
+                margin-bottom: 40px;
+            }
+            .btn{
+                margin-inline: 10px;
+            }
+            h3{
+                font-size:14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Lista no organizada -->
+    <nav>
+        <ul class="cabecera">
+            <li><a class="btn btn-dark" href="index.html">Inicio</a></li>
+            <li><a class="btn btn-dark" href="servicios.html">Servicios</a></li>
+            <li><a class="btn btn-dark" href="contacto.html">Contacto</a></li>
+            <li><a class="btn btn-dark" href="Alquiler.html">Alquiler</a></li>
+        </ul>
+    </nav>
+    <div class="portada">
+        <h1>¡Bienvenidos a Katari!</h1>
+        <h2>Nosotros te ayudaremos a conseguir la cancha de fútbol en menos de 5 minutos</h2>
+        <br><br>
+        <a href="#" class="btn btn-dark">Registrate aquí</a>
+    </div>
+    
+    <!-- jpg png -->
+    <div class="conteiner"> 
+        <div class="caja-flex">
+            <div class="caja">
+                <h3>
+                    RESERVA RÁPIDO
+                </h3>
+                <img class="img"src="../imagen/Reserva rapido.png">
+                <a href="#" class="btn btn-dark">Aceptar
+                </a>
+            </div>
+            <div class="caja">
+                <h3>
+                    CANCHAS ACTIVAS
+                </h3>
+                <a href="#" class="btn btn-dark">Aceptar</a>
+            </div>
+            <div class="caja">
+                <h3>
+                    ESCOGE LA QUE MÁS TE GUSTA
+                </h3>
+
+
+                <a href="#" class="btn btn-dark">Aceptar</a>
+            </div>
+        </div>
+    </div>
+    <div class="floating">
+        <a href="">
+            <img src="../imagen/wsp.png" alt="" width="40px">
+        </a>
+    </div>
+    <footer>
+        <div class="full-width bg-black">
+            <div class="flex-box">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+            </div>
+            <div>
+                Tania Gamboa @2022 Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

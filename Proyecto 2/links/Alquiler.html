@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        td,th{
+            padding: 5px 10px;
+        }
+        .servicios{
+            display: inline-block;
+            width: 25%;
+        }
+
+        /*Estilos de cabecera */
+        .cabecera li{
+            width: 25%;
+            display:inline-block;
+            text-align:right;
+        }
+        .btn{
+            margin-inline: 40px;
+            background: black;
+            color:white;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+
+            transition: background-color ease-out 0.2s;
+        }
+        .cabecera a{
+            color: black;
+            text-decoration: none;
+            border: solid 1px;
+            background: rgb(125, 212, 125);
+            padding: 5px 10px;
+        }
+        body{
+            background: rgb(125, 212, 196);
+        }
+        ul{
+            padding:0;
+            text-align:right;
+        }
+
+        /*Fin de estilos de cabecera */
+        h1{
+            color:black;
+            text-align:center;
+        }
+        div{
+            text-align: center;
+        }
+
+        .caja-flex{
+            display:flex;
+            justify-content: space-around;
+        }
+        .caja-flex li{
+            border: solid 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+        }
+        .bg-black{
+            background-color: black;
+            color:white;
+        }
+        @media (max-width: 767px){
+            .flex-box{
+                width:100%;
+                margin-bottom: 40px;
+            }
+            .btn{
+                margin-inline: 10px;
+            }
+            h3{
+                font-size:14px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <nav>
+        <ul class="cabecera">
+            <li><a class="btn btn-dark" href="index.html">Inicio</a></li>
+            <li><a class="btn btn-dark" href="servicios.html">Servicios</a></li>
+            <li><a class="btn btn-dark" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <h1>Servicios</h1>
+    <ul class="caja-flex">
+        <li class="servicios">Alquila tu cancha</li>
+        <li class="servicios">Promociona tu cancha</li>
+        <li class="servicios">Encuentra personas para formar tu equipo de fútbol</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Precios de alquiler</th>
+                <th>Dirección</th>
+                <th>Horarios Disponibles</th>
+                <th>Características</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10 soles la hora</td>
+                <td>Pueblo Libre</td>
+                <td>Lunes a viernes de 6 a 8 pm</td>
+                <td>Cesped verde sintético</td>
+            </tr>
+            <tr>
+                <td>12 soles la hora</td>
+                <td>San Miguel</td>
+                <td>Lunes a viernes de 4 a 6 pm</td>
+                <td>Cesped verde sintético</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <br>
+    <footer>
+        <div class="full-width bg-black">
+            <div class="flex-box">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+            </div>
+            <div>
+                Tania Gamboa @2022 Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

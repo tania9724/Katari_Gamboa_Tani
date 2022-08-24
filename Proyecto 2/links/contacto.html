@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cabecera li{
+            width: 25%;
+            display:inline-block;
+        }
+        .cabecera a{
+            color: black;
+            text-decoration: none;
+            border: solid 1px;
+            background: rgb(125, 212, 125);
+            padding: 5px 10px;
+        }
+        ul{
+            padding:0;
+            text-align:right;
+        }
+        h1{
+            color:black;
+            text-align:center;
+        }
+        h2{
+            color:black;
+            text-align:center;
+        }
+        body{
+            background: rgb(125, 212, 196);
+        }
+        legend{
+            color:rgb(14, 15, 41);
+        }
+        div{
+            text-align: center;
+        }
+        img{
+            border-radius: 50%;
+        }
+        footer{
+            text-align: center;
+        }
+        .bg-black{
+            background-color: black;
+            color:white;
+        }
+        @media (max-width: 767px){
+            .flex-box{
+                width:100%;
+                margin-bottom: 40px;
+            }
+            .btn{
+                margin-inline: 10px;
+            }
+            h3{
+                font-size:14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="cabecera">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <h1>Contacto</h1>
+
+    <form action="gracias.html">
+        <fieldset>
+            <legend>Contáctanos</legend>
+            <label for="">Nombres y apellidos:</label> <br>
+            <input type="text"> <br><br>
+            <label for="">Edad:</label> <br>
+            <input type="number" min="0"> <br><br>
+            <label for="">Correo:</label> <br>
+            <input type="email" required> <br> <br>
+            <label for="">Número de DNI</label> <br>
+            <input type="number">
+            <br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <br>
+    <footer>
+        <div class="full-width bg-black">
+            <div class="flex-box">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+            </div>
+            <div>
+                Tania Gamboa @2022 Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
